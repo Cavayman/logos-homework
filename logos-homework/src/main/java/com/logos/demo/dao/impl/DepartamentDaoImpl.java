@@ -4,6 +4,7 @@ import java.util.List;
 
 import javax.persistence.NoResultException;
 
+import org.springframework.stereotype.Repository;
 import org.springframework.transaction.annotation.Transactional;
 
 import com.logos.demo.dao.DepartmentDao;
@@ -11,7 +12,7 @@ import com.logos.demo.model.City;
 import com.logos.demo.model.Departament;
 import com.logos.demo.model.Person;
 import com.logos.demo.model.Role;
-
+@Repository
 public class DepartamentDaoImpl extends BaseDaoImpl<Departament, Long> implements DepartmentDao{
 
 	public DepartamentDaoImpl() {

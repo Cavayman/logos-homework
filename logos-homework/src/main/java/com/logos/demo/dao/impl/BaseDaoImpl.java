@@ -7,10 +7,11 @@ import javax.persistence.NoResultException;
 import javax.persistence.PersistenceContext;
 import javax.persistence.Query;
 
+import org.springframework.stereotype.Repository;
 import org.springframework.transaction.annotation.Transactional;
 
 import com.logos.demo.dao.BaseDao;
-
+@Repository
 public abstract class BaseDaoImpl<E, N extends Number> implements BaseDao<E, N> {
 
 	private Class<E> entityClass;

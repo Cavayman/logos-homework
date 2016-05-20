@@ -4,13 +4,15 @@ import java.util.List;
 
 import javax.inject.Inject;
 
+import org.springframework.stereotype.Service;
+
 import com.logos.demo.dao.CityDAO;
 import com.logos.demo.dao.DepartmentDao;
 
 import com.logos.demo.model.Departament;
 import com.logos.demo.model.Person;
 import com.logos.demo.service.DepartamentService;
-
+@Service
 public class DepartamentServiceImpl implements DepartamentService {
 	@Inject
 	DepartmentDao depdao;
