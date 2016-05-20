@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE tiles-definitions PUBLIC 
+"-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN" 
+"http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+
+<tiles-definitions>
+
+	<definition name="base.definition" template="/WEB-INF/views/layout.jsp">
+		<put-attribute name="header" value="/WEB-INF/views/tiles/header.jsp" />
+		<put-attribute name="sidebar" value="/WEB-INF/views/tiles/sidebar.jsp" />
+		<put-attribute name="main_content" value="" />
+	</definition>
+	
+	<definition name="home" extends="base.definition">
+		<put-attribute name="title" value="Home" />
+		<put-attribute name="main_content" value="/WEB-INF/views/home/home.jsp" />
+	</definition>
+	
+	<definition name="users" extends="base.definition">
+		<put-attribute name="title" value="Users" />
+		<put-attribute name="main_content" value="/WEB-INF/views/user/users.jsp" />
+	</definition>
+	
+	<definition name="user" extends="base.definition">
+		<put-attribute name="title" value="User" />
+		<put-attribute name="main_content" value="/WEB-INF/views/user/user.jsp" />
+	</definition>
+	
+		<definition name="myPage" extends="base.definition">
+		<put-attribute name="title" value="myPage" />
+		<put-attribute name="main_content" value="/WEB-INF/views/user/myPage.jsp" />
+	</definition>
+	
+		<definition name="registration" extends="base.definition">
+				<put-attribute name="title" value="registration" />
+		<put-attribute name="main_content" value="/WEB-INF/views/registration/registration.jsp" />
+	</definition>
+	
+	<definition name="AllCity" extends="base.definition">
+				<put-attribute name="title" value="City" />
+		<put-attribute name="main_content" value="/WEB-INF/views/user/City.jsp" />
+	</definition>
+	
+</tiles-definitions>
